@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : StoneWork
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140228
+
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MuCliTU</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" /><br />
+
+    <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+  </head>
+  <body>
+    <div id="header-wrapper">
+      <div id="header" class="container">
+	<div id="logo">
+	  <!--<h1><a href="#"><img src="images/elytra.png" width="200%"></a></h1>-->
+	</div>
+	<div id="menu">
+	  <ul>
+	    <li><a href="index.html" accesskey="1" title="">Home</a></li>
+	    <li class="active"><a href="upload.html" accesskey="2" title="">Upload</a></li>
+	    <li><a href="specs.html" accesskey="3" title="">Specifications</a></li>
+	    <li><a href="api.html" accesskey="4" title="">API</a></li>
+	  </ul>
+	</div>
+      </div>
+      <div id="banner" class="container">
+	<div class="title">
+	  <h2>MuCliTU</h2>
+	  <span class="byline">The Multi-Client Texture Updater</span><br /><br />
+	  <p>
+	    Texture images must have correct dimensions to be uploaded. For texture specifications, please click <a href = "specs.html" style = "color: white;">HERE</a>. In order to upload, change, or delete your textures, you must verify your ownership of the account you enter into the form. To update your textures, please first log onto the minecraft server "muclitu.com" and then, while still in the server, fill out the following form.
+	  </p>
+	  <form enctype="multipart/form-data" method="post" id="texup">
+	    <label for="uid">Username or UUID:</label>
+	    <input type="text" id="uid" name="uid" /><br /><br />
+	    <label for="texture">Texture Type:</label>
+	    <select name="texture" id="texture" form="texup">
+	      <option value="cape">Cape</option>
+	    </select><br /><br />
+	    <label for="image">Texture (Unneeded if deleting a texture):</label>
+	    <input accept="image/*" type="file" name="image" id="image" /><br /><br />
+	    <input type="submit" value="UPLOAD" name="type" /><br /><br /><br /><br /><br />
+	    <input onclick="return confirm('Are you sure you want to delete your texture?')" type="submit" value="DELETE TEXTURE" name="type" />
+	  </form>  
+	  </div>
+      </div>
+    </div>
+    <div id="copyright" class="container">
+      <p>Brought to you by: Tonio_Cartonio#3139 & TheAlphaEpsilon#7015</p>
+    </div>
+</html>
